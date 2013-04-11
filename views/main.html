@@ -1,0 +1,45 @@
+<div id="layout">
+  <div class="navbar navbar-fixed-top" id="header">
+      <div class="container">
+        <img src="images/logo.png" alt="" width=80 height=80 class="brand" />
+        <a href="#" class="brand" id="brand-title">虚拟仪器实验室</a>
+      </div>  
+  </div>
+  <div id="main">
+    <div id="right">
+      <div id="content">
+        <div class="knob">
+          <input type="text" value="75" class="dial" /> 
+        </div>
+      </div>
+    </div>
+    <div id="left-sidebar">
+      <li ng-repeat="menu in menus" class="menu">
+        <a href="##">
+          {{menu}}
+        </a>
+      </li>
+      <div class="panel">
+        <h3>前面板元件库</h3>
+        <table class="table">
+          <tr>
+            <td>测量部件</td>
+            <td>测量部件</td>
+            <td>测量部件</td> 
+          </tr>
+          <tr>
+            <td>信号</td>
+            <td>信号</td>
+            <td>信号</td> 
+          </tr>
+          <tr>
+            <td>控制旋钮</td>
+            <td>控制旋钮</td>
+            <td>控制</td> 
+          </tr>
+        </table>  
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,53 +1,40 @@
 <!doctype html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Labfoo by Krazylee</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Labfoo</h1>
-        <p>A labview-like web application</p>
+  <body ng-app="modeApp">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
 
-        <p class="view"><a href="https://github.com/Krazylee/labfoo">View the Project on GitHub <small>Krazylee/labfoo</small></a></p>
+    <!--[if lt IE 9]>
+      <script src="components/es5-shim/es5-shim.js"></script>
+      <script src="components/json3/lib/json3.min.js"></script>
+    <![endif]-->
 
+    <!-- Add your site or application content here -->
+    <div class="container-fluid" ng-view></div>
 
-        <ul>
-          <li><a href="https://github.com/Krazylee/labfoo/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/Krazylee/labfoo/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/Krazylee/labfoo">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>Labfoo</h1>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular-resource/angular-resource.js"></script>
+    <script src="components/angular-cookies/angular-cookies.js"></script>
+    <script src="components/angular-sanitize/angular-sanitize.js"></script>
 
-<p><strong>A labview-like web application</strong></p>
-
-<h2>Dependencies:</h2>
-
-<ul>
-<li>Angular</li>
-</ul><h2>Tools:</h2>
-
-<ul>
-<li>Adopting <code>Yo-Grunt-Bower workflow</code> blindly and proundly.</li>
-</ul>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/Krazylee">Krazylee</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!-- build:js scripts/scripts.js -->
+    <script src="components/jquery/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="components/jquery-knob/js/jquery.knob.js"></script>
+    <!-- endbuild -->
   </body>
 </html>
