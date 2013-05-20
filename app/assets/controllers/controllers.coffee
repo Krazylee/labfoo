@@ -13,3 +13,8 @@ angular.module('labfoo')
 
     $scope.showPosition = (event, ui) ->
       console.log(ui.offset)
+    
+    
+
+
+

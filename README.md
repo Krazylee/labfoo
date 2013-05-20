@@ -6,6 +6,7 @@
 
 ### Custom tags
 - knob
+- waveform
 
 ### Custom property
 - showonhover
