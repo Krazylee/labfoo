@@ -16,4 +16,19 @@
     };
   });
 
+  directives.directive('knob', function() {
+    return {
+      restrict: 'E',
+      scope: {
+        name: '@'
+      },
+      link: function(scope, element, attrs) {
+        scope.startDrag = function() {};
+        return scope.showPosition = function() {};
+      },
+      replace: true,
+      templateUrl: "../../views/components/knob.html"
+    };
+  });
+
 }).call(this);
