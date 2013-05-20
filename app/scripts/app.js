@@ -1,15 +1,12 @@
-'use strict';
+(function() {
 
-angular.module('modeApp', ['ngDragDrop'])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+  angular.module('labfoo', ['ngDragDrop', 'labfoo.directives']).config(function($routeProvider) {
+    return $routeProvider.when('/', {
+      templateUrl: 'views/main.html',
+      controller: 'MainCtrl'
+    }).otherwise({
+      redirectTo: '/'
+    });
   });
 
-
+}).call(this);
