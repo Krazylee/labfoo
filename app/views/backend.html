@@ -1,15 +1,22 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a href="#" class="brand">虚拟仪器实验室(后面板)</a>
+      <a href="/" class="brand">虚拟仪器实验室</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <li class="active"><a href="#">Home</a>  </li>  
-        </ul>    
-      </div>
-    </div>  
+          <li ng-repeat="menu in menus" class="menu">
+          <a href="{{menu.url}}">{{menu.name}}</a>
+          </li>
+        </ul>
+      </div>  
+    </div>
   </div>
-</div>
-
-
-
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <div class="panel" >
+          <h3>程序框图设计面板</h3>
+        </div>  
+      </div> 
+    </div>
+  </div>

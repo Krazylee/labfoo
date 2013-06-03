@@ -2,46 +2,28 @@
   <div class="navbar-inner">
     <div class="container">
       <a href="#" class="brand">虚拟仪器实验室</a>
-      <div class="nav-collapse">
-        <ul class="nav">
-          <li class="active"><a href="#">Home</a>  </li>  
-        </ul>    
-      </div>
+      <ul class="nav">
+        <li ng-repeat="menu in menus" class="menu">
+          <a href="{{menu.url}}">{{menu.name}}</a>
+        </li>
+      </ul>
     </div>  
   </div>
 </div>
-<div class="span9">
-  <wave></wave>
-</div>
+
 <div class="container">
   <div class="row">
     <div class="span3">
-      <li ng-repeat="menu in menus" class="menu">
-        <a href="##">{{menu}}</a>
-      </li>
       <div class="panel" >
         <h3>前面板元件库</h3>
-        <div class="preview">
-          <knob style="border:1px solid #ccc;"></knob> 
-        </div>
-        <table class="table">
-          <tr>
-            <td class="btn btn-primary" ng-click="showKnob()" >旋钮</td>
-            <td>测量部件</td>
-            <td>测量部件</td> 
-          </tr>
-          <tr>
-            <td>信号</td>
-            <td>信号</td>
-            <td>信号</td> 
-          </tr>
-          <tr>
-            <td>控制旋钮</td>
-            <td>控制旋钮</td>
-            <td>控制</td> 
-          </tr>
-        </table>  
+        <ul>
+          <li class="btn btn-primary" ng-click="showOsc()">波形显示图表</li> 
+          <li class="btn btn-primary" ng-click="showKnob()">旋钮</li>
+        </ul>
+        
       </div>  
-    </div>  
+    </div> 
+    <div class="span9">
+    </div>
   </div>
 </div>

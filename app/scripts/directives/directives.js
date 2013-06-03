@@ -31,8 +31,12 @@
         name: '@'
       },
       link: function(scope, element, attrs) {
-        scope.startDrag = function() {};
-        return scope.showPosition = function() {};
+        scope.startDrag = function() {
+          return $(".knob").draggable("enable");
+        };
+        return scope.showPosition = function() {
+          return $(".knob").draggable("disable");
+        };
       },
       replace: true,
       templateUrl: "../../views/components/knob.html"

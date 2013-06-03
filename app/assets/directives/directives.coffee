@@ -20,7 +20,9 @@ directives.directive 'knob', ->
     name: '@'
   link: (scope, element, attrs) ->
     scope.startDrag = ->
+      $(".knob").draggable("enable")
     scope.showPosition = ->
+      $(".knob").draggable("disable")
   replace: true
   templateUrl: "../../views/components/knob.html"
 
