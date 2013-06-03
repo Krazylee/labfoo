@@ -1,5 +1,5 @@
-angular.module('labfoo')
-  .controller 'MainCtrl', ($scope) ->
+labfoo = angular.module('labfoo')
+labfoo.controller 'MainCtrl', ($scope) ->
     $scope.menus = [
       '前面板',
       '后面板'
@@ -8,13 +8,10 @@ angular.module('labfoo')
     $scope.showKnob = ->
       $(".knob").show().find(".dial").knob()
 
-    $scope.startDrag = (event, ui) ->
-      console.log(ui.offset)
+labfoo.controller 'BackendCtrl', ($scope) ->
 
-    $scope.showPosition = (event, ui) ->
-      console.log(ui.offset)
-    
-    
+
+        
 
 
 

@@ -1,5 +1,6 @@
 @import "compass_twitter_bootstrap";
 @import "compass_twitter_bootstrap_responsive";
+@import "jquery-ui";
 
 
 body {
@@ -24,5 +25,18 @@ li {
 .dial {
     position: absolute;
 }
+label{
+    display: inline;
+}
+.wave {
+    width: 650px;
+    background: #111;
+}
 
+#sin-f, #cos-f, #period {
+  max-width: 30px;
+}
 
+#Y-pos {
+  max-width: 40px;
+}

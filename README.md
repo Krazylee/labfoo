@@ -6,12 +6,15 @@
 
 ### Custom tags
 - knob
-- waveform
+- wave
+- soundwave
 
 ### Custom property
 - showonhover
+- resizable
+- jqyoui-draggable 
 
 
 ## Tools:
-* Adopting `Yo-Grunt-Bower workflow` blindly and proundly.
+* yeoman
 
