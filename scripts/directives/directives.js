@@ -39,7 +39,7 @@
         };
       },
       replace: true,
-      templateUrl: "../../views/components/knob.html"
+      templateUrl: "http://krazylee.github.io/labfoo/views/components/knob.html"
     };
   });
 
@@ -198,7 +198,7 @@
         return draw();
       },
       replace: true,
-      templateUrl: "../../views/components/wave.html"
+      templateUrl: "http://krazylee.github.io/labfoo/views/wave.html"
     };
   });
 

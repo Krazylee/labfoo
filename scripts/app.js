@@ -6,10 +6,10 @@
   app.config([
     '$routeProvider', '$locationProvider', (function($routeProvider, $locationProvider) {
       $routeProvider.when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'http://krazylee.github.io/labfoo/views/main.html',
         controller: 'MainCtrl'
       }).when('/backend', {
-        templateUrl: 'views/backend.html',
+        templateUrl: 'http://krazylee.github.io/labfoo/views/backend.html',
         controller: 'BackendCtrl'
       }).otherwise({
         redirectTo: '/'
