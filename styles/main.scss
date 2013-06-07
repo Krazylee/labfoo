@@ -1,82 +1,43 @@
 @import "compass_twitter_bootstrap";
 @import "compass_twitter_bootstrap_responsive";
+@import "jquery-ui";
 
-#layout, #header, #main, #left-sidebar, #right, #right-sidebar, #content {
-    position: absolute;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow: hidden;
+
+body {
+    padding-top: 80px;
 }
 
 li {
     list-style: none;
 }
 
-#layout {
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 0; 
+.handler {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
 }
-
-#header { 
-    top: 0; 
-    right: 0; 
-    left: 0; 
-}
-
-#inner-navbar {
-    height: 100%;
-}
-
-#brand-title {
-    margin-top: 20px;
-}
-
-#main {                   
-    top: 100px; 
-    right: 0; 
-    bottom: 0; 
-    left: 0; 
-}
-
-#left-sidebar  { 
-    background: url("../images/bg.jpg"); 
-    top: 0; 
-    width: 200px; 
-    bottom: 0; 
-    left: 0; 
-    padding-left:15px;
-    padding-top: 10px;
-}
-
-#right  {                   
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 200px; 
-}
-#content { 
-    background: #eee; 
-    top: 0; 
-    width: 100%; 
-    bottom: 0; 
-    left: 0; 
-}
-#content, #right-sidebar, #left-sidebar { overflow: auto; }
-
-
-.menu {
-    margin: 20px;
-}
-
-.panel {
-    margin-top: 100px;
-}
-
 
 .knob {
-    margin-left: 100px;
-    margin-top: 100px;
+    position: relative;
+}
+
+.dial {
+    position: absolute;
+}
+label{
+    display: inline;
+}
+.wave {
+    width: 650px;
+    background: #111;
+    display: none;
+}
+
+#sin-f, #cos-f, #period {
+  max-width: 30px;
+}
+
+#Y-pos {
+  max-width: 40px;
 }

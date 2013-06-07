@@ -12,7 +12,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body ng-app="modeApp">
+  <body ng-app="labfoo">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -23,18 +23,38 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container-fluid" ng-view></div>
+    <div class="container-responsive" ng-view></div>
+    
+    <div class="row">
+    <div class="preview span3">
+      <knob style="border:1px solid #ccc;"></knob> 
+      <wave></wave>
+    </div>
+    </div>
 
+
+
+    <script src="components/jquery/jquery.min.js"></script>
     <script src="components/angular/angular.js"></script>
-    <script src="components/angular-resource/angular-resource.js"></script>
-    <script src="components/angular-cookies/angular-cookies.js"></script>
-    <script src="components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="scripts/vendor/jui.js"></script>
+    <script src="scripts/vendor/waveform.js"></script>
 
     <!-- build:js scripts/scripts.js -->
-    <script src="components/jquery/jquery.min.js"></script>
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/directives/directives.js"></script>
+    <script src="scripts/controllers/controllers.js"></script>
     <script src="components/jquery-knob/js/jquery.knob.js"></script>
     <!-- endbuild -->
+
+    <script src="components/angular-dragdrop/lib/jquery-ui.min.js"></script>
+    <script src="components/angular-dragdrop/src/angular-dragdrop.min.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
   </body>
 </html>

@@ -1,0 +1,9 @@
+{
+  "name": "waveform",
+  "version": "0.0.0",
+  "commit": "d16a88832f002920e2569d3a3278414b84ca252a",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/soundcloud/waveformjs.git"
+  }
+}
